@@ -4,4 +4,4 @@ Implemented a toggle switch for Light/Dark Theme.
 
 Also learned about media-query selectors in CSS for Rendering Tools in browsers, such as media-query selectors and emulators (i.e prefers-light-theme, prefers-dark theme)
 
-[![Image from Gyazo](https://i.gyazo.com/07a158b21f1c100d31f7fbed7735a51f.gif)](https://gyazo.com/07a158b21f1c100d31f7fbed7735a51f)
+[![Image from Gyazo](https://i.gyazo.com/ed330fbef346b842d129256a0b17f667.gif)](https://gyazo.com/ed330fbef346b842d129256a0b17f667)
