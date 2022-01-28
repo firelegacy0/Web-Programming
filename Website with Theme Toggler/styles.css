@@ -1,0 +1,290 @@
+:root {
+
+  --background-theme:var(--background-color);
+  --background-color: #FFF9F9;
+
+  --text-color:var(--color);
+  --color:black;
+
+  --buttonBorderColor:var(--border-color);
+  
+  --border-color: rgb(18, 121, 206);
+
+  --buttonBoxShadow:var(--box-shadow);
+  --box-shadow: 2px 2px 0px rgb(124, 125, 126);
+
+  --element-box-background:var(--element-box-background-color);
+  --element-box-background-color: rgb(173, 180, 159);
+
+  --element-box-shadow:var(--element-box-shadow);
+  --element-box-shadow: 0px 2px 5px rgb(0 0 0 / 50%), 0 2px 10px 0 rgb(0 0 0 / 150%);
+}
+
+/* Style all a href link colors */
+a,a:link,a:link:visited{
+  font-weight: bold;
+  color:rgb(65, 196, 255);
+}
+
+a:hover{
+  color:rgb(248, 181, 37);
+}
+
+/* Extra Stylings for nav section, links to resources I used */
+nav{
+  position: absolute;
+  background-color: var(--background-theme);
+}
+
+nav a{
+  color:green;
+}
+
+/* Layout no.1 */
+body {
+  margin-left: 1em;
+  background-color: var(--background-theme);
+  color:var(--text-color);
+  max-width: 90%;
+  max-height: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+/* Layout no.2 */
+article, section{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Layout no.3 */
+h3{
+  margin-top: 10px;
+}
+
+/* Aesthetic no.3 */
+h1,h2,h3{
+  color: #f44336;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0px #7a6a6a;
+}
+
+/* Layout no. 4 and Aesthetic no. 6*/
+#key-terms dt{
+  margin-bottom: 3px;
+  font-size: large; 
+  font-weight: bold;
+  text-shadow:1px 1px 1px rgb(124, 125, 126);
+}
+
+/* Formats all dt, also the inclusions under Miscellaneous section */
+section dl > dt {
+  margin: 2px;
+  font-weight: normal;
+  text-shadow:1px 1px 1px rgb(124, 125, 126);
+}
+
+/* Style the direct child of dl, which is every dd */
+dl > dd {
+  margin: 2px 5px 15px 30px;
+}
+
+/* Layout no.5 and Aesthetic no. 9*/
+button{
+  margin-bottom: 5px;
+  border-radius: 7px;
+  font-size: 15px;
+  border-color:var(--buttonBorderColor);
+  box-shadow:var(--buttonBoxShadow);
+  color: var(--text-color);
+}
+
+/* Extra Stylings for the two buttons when hovered */
+button:hover{
+  background-color: var(--element-box-background-color);
+  cursor:pointer;
+}
+
+/* Extra Stylings to hide text of buttons when hovered */
+/* Hide the original text when hovered */
+button:hover span{
+  display: none;
+}
+
+button:hover::before{
+  content: "I said don't ! ";
+}
+
+/* Layout 6 and Aesthetics no.10 */
+/* This is each "containers" */
+section#element-types article{
+  margin:5px; 
+  padding: 2px;
+  border: 3px solid rgba(9, 9, 126, 0.6);
+  min-height:200px;
+  max-width: 20%;
+  border-radius: 7px;
+}
+
+/* Part of Layout 6 */
+/* This is how big the entire area(canvas) is */
+#element-types > div{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* Layout 7a */
+#element-types dfn{
+  font-style:normal;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Selects the big div containing dfn and divs */
+.element-block > div  {
+  padding:4px;
+  display:flex;
+}
+
+/* This controls the second div */
+/* the fullname of each tag */
+.element-block > div:first-child{
+  justify-content: space-between;
+}
+
+/* Adds the text before inline/block */
+.element-block > div:nth-child(2)::before{
+  content: "Display: ";
+}
+
+/* Aesthetics no.11 */ 
+/* This styles the inline or block wording (3rd div) */
+.element-block > div:nth-child(2){
+  font-size:95%;
+  font-style: italic;
+  justify-content: end;
+}
+
+
+/* Extra Styling for Hovering */
+.element-block:hover{
+  background-color: var(--element-box-background-color);
+  cursor:pointer;
+}
+
+/* Aesthetics no.7  */
+/* Style the codeblocks */
+/* Used the css stylings from prism.css*/
+/* https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css */
+.language-html {
+  color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+  padding-top:3px;
+  background-color: rgb(252, 189, 147);
+}
+
+/* Style the span tokens inside code block */
+.token {
+  color:rgba(164, 88, 235,0.8);
+}
+
+
+/* Style the <code> tags */
+code{
+  color:rgba(164, 88, 235,0.6);
+  font-weight: bold;
+  font-size: 14px; 
+  text-shadow: 0.5px 0.5px 1px rgb(124, 125, 126);
+} 
+
+/* Aesthetics no.8 */
+/* Style list item bullet */
+li {
+  list-style-type: none;
+}
+
+li::before {
+  margin-left: -1.5em;
+  content: "🔸"; 
+}
+
+
+/* ----Extra Stylings---- */
+/* ----Sticky and Switch---- */
+.sticky{
+    margin-top: 3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:10px;
+    margin-left:102%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

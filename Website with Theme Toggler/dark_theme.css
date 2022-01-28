@@ -1,0 +1,52 @@
+/* Used for the button switcher to set light-theme css styles */
+/* Used by my button for toggling */
+[data-theme="dark"]{
+
+    --background-theme:var(--background-color);
+    --background-color: #3f3f3f;
+
+    --text-color:var(--color);
+    --color: #ffffff;
+        
+    --buttonBorderColor:var(--border-color);   
+    --border-color: #ffffff;
+  
+    --buttonBoxShadow:var(--box-shadow);
+    --box-shadow: 2px 2px 0 rgb(124, 125, 126);
+
+    --element-box-background:var(--element-box-background-color);
+    --element-box-background-color: rgb(148, 151, 142);
+
+    --element-box-shadow:var(--element-box-shadow);
+    --element-box-shadow: 0px 2px 5px rgb(0 0 0 / 50%), 0 2px 10px 0 rgb(0 0 0 / 150%);
+
+
+}
+
+/* Used for Media Query from a Device */
+/* Learned about this from Asel.S */
+@media (prefers-color-scheme: dark)
+{
+    :root {
+        --background-theme:var(--background-color);
+        --background-color: #3f3f3f;
+
+        --text-color:var(--color);
+        --color: #ffffff;
+
+        --buttonBorderColor:var(--border-color);
+        --border-color: #ffffff;
+      
+        --buttonBoxShadow:var(--box-shadow);
+        --box-shadow: 2px 2px 0 rgb(124, 125, 126);
+
+        --element-box-background:var(--element-box-background-color);
+        --element-box-background-color: rgb(148, 151, 142);
+
+        --element-box-shadow:var(--element-box-shadow);
+        --element-box-shadow: 0px 2px 5px rgb(0 0 0 / 50%), 0 2px 10px 0 rgb(0 0 0 / 150%);
+
+      }
+
+}
+    
