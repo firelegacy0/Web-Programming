@@ -1,4 +1,6 @@
-Task from Assignment 2 - To improve class's existing HTML Notes using HTML and CSS.
+<h2> Introduction </h2>
+
+<h4> Assignment 2 - To improve class's existing HTML Notes using HTML and CSS </h4>
 
 Implemented a toggle switch for Light/Dark Theme.
 
